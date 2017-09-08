@@ -14,6 +14,7 @@ public class Houses
     //   ------------- Recipe for drawHouse --#9.2
     //       Change the pen color of the line the tortoise draws to lightGray --#15
     //       Move the tortoise the height of a house --#1.1
+    Tortoise.move(42);
     //       Turn the tortoise 90 degrees to the right --#2
     //       Move the tortoise 30 pixels --#3
     //       Turn the tortoise 90 degrees to the right --#4
