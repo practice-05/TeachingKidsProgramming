@@ -4,7 +4,7 @@ import org.teachingextensions.logo.Tortoise;
 import org.teachingextensions.logo.utils.ColorUtils.PenColors;
 import org.teachingextensions.virtualproctor.VirtualProctor;
 
-public class Houses3
+public class Houses4
 {
   public static void main(String[] args)
   {
@@ -23,10 +23,37 @@ public class Houses3
   {
     Tortoise.setPenColor(PenColors.Reds.Red);
     Tortoise.move(height);
-    // drawFlatRoof();
     //draw a pointy roof
-    //drawPointyRoof();
-    //draw a trapezoid
+    drawPointyRoof();
+    Tortoise.move(height);
+    Tortoise.turn(-90);
+    Tortoise.move(20);
+    Tortoise.turn(-90);
+    //trapezoid
+    Tortoise.setPenColor(PenColors.Reds.Red);
+    Tortoise.move(height);
+    drawTrapezoidRoof();
+    Tortoise.move(height);
+    Tortoise.turn(-90);
+    Tortoise.move(20);
+    Tortoise.turn(-90);
+    //Flat
+    Tortoise.setPenColor(PenColors.Reds.Red);
+    Tortoise.move(height);
+    drawFlatRoof();
+    Tortoise.move(height);
+    Tortoise.turn(-90);
+    Tortoise.move(20);
+    Tortoise.turn(-90);
+  }
+  private static void drawFlatRoof()
+  {
+    Tortoise.turn(90);
+    Tortoise.move(30);
+    Tortoise.turn(90);
+  }
+  private static void drawTrapezoidRoof()
+  {
     Tortoise.turn(45);
     Tortoise.move(10);
     Tortoise.turn(45);
@@ -34,10 +61,6 @@ public class Houses3
     Tortoise.turn(60);
     Tortoise.move(10);
     Tortoise.turn(30);
-    Tortoise.move(height);
-    Tortoise.turn(-90);
-    Tortoise.move(20);
-    Tortoise.turn(-90);
   }
   private static void drawPointyRoof()
   {
@@ -46,11 +69,5 @@ public class Houses3
     Tortoise.turn(90);
     Tortoise.move(15);
     Tortoise.turn(45);
-  }
-  private static void drawFlatRoof()
-  {
-    Tortoise.turn(90);
-    Tortoise.move(30);
-    Tortoise.turn(90);
   }
 }
