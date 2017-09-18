@@ -4,7 +4,7 @@ import org.teachingextensions.logo.Tortoise;
 import org.teachingextensions.logo.utils.ColorUtils.PenColors;
 import org.teachingextensions.virtualproctor.VirtualProctor;
 
-public class Houses4
+public class Houses5
 {
   public static void main(String[] args)
   {
