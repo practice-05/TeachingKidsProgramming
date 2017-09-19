@@ -13,26 +13,30 @@ public class HousesB
     int height = 40;
     drawHouseFlatRoof(height);
     drawHousePointyRoof(30);
+    drawHouseSlantedRoof(90);
     drawHouseFlatRoof(120);
     drawHousePointyRoof(150);
+    drawHouseSlantedRoof(60);
     drawHouseFlatRoof(90);
     drawHousePointyRoof(70);
+    drawHouseSlantedRoof(100);
     drawHouseFlatRoof(20);
     drawHousePointyRoof(100);
     drawHousePointyRoof(200);
-    drawHouseSlantedRoof(100);
+    drawHouseSlantedRoof(150);
   }
   private static void drawSlantedRoof()
   {
     Tortoise.turn(130);
-    Tortoise.move(10);
+    Tortoise.move(50);
+    Tortoise.turn(50);
   }
   private static void drawHouseSlantedRoof(int height)
   {
     Tortoise.setPenColor(Reds.Red);
     Tortoise.move(height);
     drawSlantedRoof();
-    Tortoise.move(height);
+    Tortoise.move(height - 32);
     Tortoise.turn(-90);
     Tortoise.move(20);
     Tortoise.turn(-90);
