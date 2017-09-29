@@ -38,7 +38,7 @@ public class DeepDive02Variables
     int milkTastiness = 6;
     addChocolate();
     milkTastiness = 10;
-    Assert.assertEquals(milkTastiness, 16);
+    Assert.assertEquals(milkTastiness, 6 + 10);
   }
   @Test
   public void variablesAreSnotStuck() throws Exception
