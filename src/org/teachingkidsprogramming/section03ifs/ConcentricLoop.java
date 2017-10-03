@@ -11,8 +11,11 @@ public class ConcentricLoop
     //  Set the tortoise y position to 200 --#4.2
     //  Set the tortoise speed to 10  --#4.3
     //  Do the following 360 times --#3.1
+    for (int i = )
     //      Move the tortoise 3 pixels --#1
+    Tortoise.move(3);
     //      Turn the tortoise 1 degree --#2
+    Tortoise.turn(1);
     //      If i is divisible by 20 --(HINT: Use mod operator '%') --#7
     //          Do the following 360 times --#8.1
     //              Move the tortoise 1 pixel  --#5  
